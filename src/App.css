@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+  background-color: #ffdc83;
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 130px;
+  height: 32px;
+  left: 151px;
+  top: 616px;
+}
+
+input {
+  position: absolute;
+  border-radius: 5px;
+  border: 2px solid #ffdc83;
+  width: 266px;
+  height: 36px;
+  left: 80px;
+  top: 552px;
+}
+
+select {
+  position: absolute;
+  border-radius: 5px;
+  border: 2px solid #ffdc83;
+  width: 273px;
+  height: 40px;
+  left: 80px;
+  top: 488px;
+  font-family: "Londrina Solid", cursive;
+}
+
+option {
+  font-family: "Londrina Solid", cursive;
+}
+
+h1 {
+  margin: 3px;
+  font-size: 120px;
+  font-family: "Londrina Solid", cursive;
+  text-shadow: 2px 2px #282c34;
+  color: #ffdc83;
+}
+h3 {
+  margin: 5px;
+  font-size: 40px;
+  width: 544 px;
+  font-family: "Londrina Solid", cursive;
+  color: #ffdc83;
+  text-shadow: 2px 2px #282c34;
+}
+
+#gallery img {
+  object-fit: cover;
+
+  margin: 5px;
+}
+
+body {
+  background-image: linear-gradient(to right, #6bd2ff, rgb(255, 255, 255));
+}
+
+.container {
+  display: flex;
+  width: 500px;
+  height: 100%;
+  grid-gap: 20px;
+  grid-template-areas:
+    "title image"
+    "title image"
+    "search image";
+}
+
+.image-grid {
+  position: absolute;
+  top: 24px;
+  margin-left: 500px;
+  grid-area: image;
+  margin-top: 0%;
+}
+
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 16pt;
+
+  font-family: "Londrina Solid", cursive;
+
+  color: #ffdc83;
+
+  text-shadow: black 1px 1px;
+}
